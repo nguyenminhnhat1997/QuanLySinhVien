@@ -1,0 +1,219 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="John Doe">
+	<meta name="description" content="">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Title -->
+	<title>Classic One Page Template</title>
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+	<link rel="shortcut icon" type="/image/ico" href="/images/favicon.ico" />
+	<!-- Plugin-CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/css/icofont.css">
+	<link rel="stylesheet" href="/css/magnific-popup.css">
+	<link rel="stylesheet" href="/css/animate.css">
+	<link rel="stylesheet" href="/css/style_of_me.css">
+	<!-- Main-Stylesheets -->
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="/css/responsive.css">
+	<link rel="stylesheet" href="/css_me/css_me.css">
+	<link rel="stylesheet" href="/js_me/js_me.js">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="/js/vendor/modernizr-2.8.3.min.js"></script>
+ <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  #affix2.affix {
+      top: 85px;
+      z-index: 9999 !important;
+  }
+  </style>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target=".mainmenu-area">
+	<!--Preloader-->
+	<div class="preloader">
+		<div class="spinner"></div>
+	</div>
+
+	<!-- Mainmenu-Area -->
+	<nav class="navbar mainmenu-area" data-spy="affix" data-offset-top="197">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div id="search-box" class="collapse">
+						<form action="#">
+							<input type="search" class="form-control" placeholder="What do you want to know?">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="navbar-header smoth">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						<a class="navbar-brand" href="#home-area"><img src="/images/logo.png" alt=""></a>
+					</div>
+					<div class="collapse navbar-collapse navbar-right" id="mainmenu">
+						<ul class="nav navbar-nav navbar-right help-menu">
+							<li><a href="#search-box" data-toggle="collapse"><i class="icofont icofont-search-alt-2"></i></a></li>
+							{{#if user}}
+							<li><a href=""><i class="icofont icofont-user-alt-4"></i>User</a></li>
+							<li>
+								<a href="/logout">
+									<span class="glyphicon glyphicon-log-out log_out"></span>
+								</a>
+							</li>							
+							{{else}}
+							<li>
+								<a href="/login">
+									<span class="glyphicon glyphicon-log-in log_in"></span>
+								</a>
+							</li>
+							{{/if}}
+
+						</ul>
+						<ul class="nav navbar-nav primary-menu">
+							<li class="active"><a href="#home-area">Home</a></li>
+							<li><a href="#service-area">Services</a></li>
+							<li><a href="#portfolio-area">Portfolio</a></li>
+							<li><a href="#team-area">Team</a></li>
+							<li><a href="#blog-area">Blog</a></li>
+							<li><a href="#contact-area">Liên hệ</a></li>
+							<li><a href="/classes">Classes</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Mainmenu-Area-/ -->
+
+
+	<!--Header-Area-->
+	<header class="header-area overlay" id="home-area">
+		<div class="vcenter">
+			<div class="container">
+				<div class="row">
+					<div class="hidden-xs col-sm-10 col-md-8">
+						<div class="header-text">
+							<h2 class="header-title wow fadeInUp">We Are Provide Creative Business</h2>
+
+							{{#if user}}
+								<div class="wow fadeInUp" data-wow-delay="0.5s"><q>Chào mừng bạn đến với ứng dụng quản lý sinh viên </q></div>
+								<div class="wow fadeInUp" data-wow-delay="0.7s">
+								<button type="button" class="bttn bttn-lg bttn-primary">
+									Wellcome  <i class="fa fa-heart-o" style="font-size:24px;"></i></button>
+							{{else}}
+									<div class="wow fadeInUp" data-wow-delay="0.5s"><q>Bạn cần đăng nhập để sử dụng dịch vụ của chúng tôi </q></div>
+									<div class="wow fadeInUp" data-wow-delay="0.7s">
+										<a href="/login" class="bttn bttn-lg bttn-primary">Đăng Nhập Ngay !</a>
+							{{/if}}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!--Header-Area-/-->
+
+			<!-- About-Area -->
+			<section class="section-padding" id="about-area">
+				<div class="container">
+					<div class="row">	
+						{{{body}}}
+					</div>
+				</div>
+			</section>
+			<!-- About-Area / -->
+
+			<!-- Service are -->
+
+			<!-- 	Service are /  -->
+
+			<!-- Chat-Area -->
+
+
+			<!-- Chat-Area / -->
+
+
+
+
+
+			<!-- Portfolio-Area -->
+
+			<!-- Portfolio-Area / -->
+
+
+
+			<!-- Team-Area -->
+			{{>team}}
+			<!-- Team-Area / -->
+
+
+
+			<!-- Price-Area -->
+
+			<!-- Price-Area -->
+
+
+			<!-- Blog-area -->
+			{{!-- 	{{>blog}} --}}
+			<!-- Blog-area / -->
+
+			<!-- Thong Ke Area -->
+<!-- <section class="section-padding gray-bg">
+	{{>statistic}}
+</section> -->
+<!-- Thong Ke Area / -->
+
+<!-- Contact-Area -->
+<!-- {{>contact}} -->
+<!-- Contact-Area / -->
+<div id="maps"></div>
+
+
+<!-- Footer-Area -->
+{{>footer}}
+<!-- Footer-Area / -->
+
+
+<!--Vendor-JS-->
+<script src="/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="/js/vendor/bootstrap.min.js"></script>
+<!--Plugin-JS-->
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/appear.js"></script>
+<script src="/js/bars.js"></script>
+<script src="/js/waypoints.min.js"></script>
+<script src="/js/counterup.min.js"></script>
+<script src="/js/easypiechart.min.js"></script>
+<script src="/js/mixitup.min.js"></script>
+<script src="/js/contact-form.js"></script>
+<script src="/js/scrollUp.min.js"></script>
+<script src="/js/magnific-popup.min.js"></script>
+<script src="/js/wow.min.js"></script>
+<!--Main-active-JS-->
+<script src="/js/main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXZ3vJtdK6aKAEWBovZFe4YKj1SGo9V20&callback=initMap"></script>
+<script src="/js/maps.js"></script>
+
+</body>
+
+</html>
